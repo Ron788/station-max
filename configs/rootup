@@ -1,0 +1,2 @@
+/data/local/tmp/rootd/enforce-up.sh
+/data/local/tmp/rootd/adbd-watchdog.sh >/dev/null 2>&1 &

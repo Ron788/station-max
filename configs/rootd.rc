@@ -1,0 +1,14 @@
+# Расположение на станции: /odm/etc/init/rootd.rc
+# init читает этот файл при загрузке (после монтирования /odm) и запускает
+# rootd при sys.boot_completed. Бинарник /odm/bin/rootd помечен adbd_exec,
+# поэтому init переходит в домен adbd. Стартовые команды и очередь лежат в
+# /data/local/tmp (shell_data_file): adbd не имеет доступа к /odm и /data/local.
+
+service rootd /odm/bin/rootd
+    class main
+    user root
+    group root
+    disabled
+
+on property:sys.boot_completed=1
+    start rootd

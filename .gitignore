@@ -1,0 +1,40 @@
+# --- личные рабочие заметки и черновики ---
+/ingore/
+/ignore/
+
+# --- временные каталоги сборки и экспериментов в корне ---
+/.build/
+*.o
+*.a
+*.so
+*.d
+*.dSYM/
+*.ll
+*.bc
+
+# --- кэши / изолированные окружения ---
+zig-cache/
+.zig-cache/
+.venv/
+venv/
+node_modules/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# --- редакторы / ОС ---
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# --- секреты / локальные журналы ---
+.env
+*.log
+
+/lite-kit/
